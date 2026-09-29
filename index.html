@@ -3,67 +3,167 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Adedayo Joseph Falana | Portfolio</title>
 
   <style>
     * {
-      box-sizing: border-box;
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
     }
 
     body {
       font-family: Arial, sans-serif;
       line-height: 1.6;
-      color: #222;
-      background: #f5f7fa;
+      color: #1f2937;
+      background: #f8fafc;
     }
 
     header {
       background: #111827;
       color: white;
+      padding: 70px 20px;
       text-align: center;
-      padding: 60px 20px;
     }
 
     header h1 {
-      font-size: 36px;
+      font-size: 42px;
       margin-bottom: 10px;
     }
 
     header p {
-      font-size: 18px;
+      font-size: 19px;
       color: #d1d5db;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    nav {
+      background: white;
+      padding: 15px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      border-bottom: 1px solid #e5e7eb;
+      z-index: 10;
+    }
+
+    nav a {
+      color: #111827;
+      text-decoration: none;
+      margin: 0 12px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #2563eb;
     }
 
     section {
-      max-width: 900px;
-      margin: 30px auto;
-      padding: 30px;
+      max-width: 950px;
+      margin: 35px auto;
+      padding: 35px 25px;
       background: white;
       border-radius: 12px;
     }
 
-    h2 {
-      margin-bottom: 15px;
+    section h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
       color: #111827;
+    }
+
+    .intro {
+      font-size: 18px;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .skill {
+      background: #eef2ff;
+      padding: 10px 15px;
+      border-radius: 20px;
+      font-weight: bold;
+    }
+
+    .experience,
+    .project {
+      margin-bottom: 25px;
+      padding: 20px;
+      border-left: 4px solid #2563eb;
+      background: #f8fafc;
+    }
+
+    .experience h3,
+    .project h3 {
+      margin-bottom: 8px;
+      color: #111827;
+    }
+
+    .date {
+      color: #6b7280;
+      font-size: 14px;
+      margin-bottom: 10px;
     }
 
     ul {
       padding-left: 20px;
     }
 
-    .project {
-      margin-top: 20px;
-      padding: 20px;
-      background: #f3f4f6;
-      border-radius: 8px;
+    .buttons {
+      margin-top: 25px;
+    }
+
+    .button {
+      display: inline-block;
+      background: #2563eb;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 6px;
+      text-decoration: none;
+      margin: 5px;
+    }
+
+    .button:hover {
+      background: #1d4ed8;
     }
 
     footer {
       text-align: center;
-      padding: 30px;
-      color: #666;
+      padding: 35px 20px;
+      background: #111827;
+      color: #d1d5db;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 32px;
+      }
+
+      header p {
+        font-size: 16px;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 5px 7px;
+        font-size: 14px;
+      }
+
+      section {
+        margin: 20px 12px;
+        padding: 25px 20px;
+      }
     }
   </style>
 </head>
@@ -72,60 +172,149 @@
 
   <header>
     <h1>Adedayo Joseph Falana</h1>
-    <p>Web & Computer Programming Student | Data & AI Enthusiast</p>
+
+    <p>
+      Web & Computer Programming Student |
+      Data & AI Enthusiast |
+      Digital Records Specialist
+    </p>
+
+    <div class="buttons">
+      <a class="button" href="#projects">View Projects</a>
+      <a class="button" href="#contact">Contact Me</a>
+    </div>
   </header>
 
-  <section>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
     <h2>About Me</h2>
+
+    <p class="intro">
+      I am a Web and Computer Programming student with a growing interest
+      in web development, artificial intelligence, data, and technology.
+      I enjoy working with digital information, solving problems, learning
+      new tools, and building practical technology skills.
+    </p>
+
+    <br>
+
     <p>
-      I am a Web and Computer Programming student with an interest in
-      technology, artificial intelligence, data, and web development.
-      I enjoy learning new tools, solving problems, and working with
-      digital information accurately.
+      My experience includes data entry, digital record verification,
+      document management, and working with online productivity tools.
+      I am currently developing my programming skills and exploring
+      opportunities in technology, AI, data, and remote work.
     </p>
   </section>
 
-  <section>
+  <section id="skills">
     <h2>Skills</h2>
-    <ul>
-      <li>HTML & CSS</li>
-      <li>JavaScript</li>
-      <li>Python fundamentals</li>
-      <li>Data entry and verification</li>
-      <li>Digital records management</li>
-      <li>AI tools and prompt engineering</li>
-      <li>Google Workspace and Microsoft Office</li>
-    </ul>
+
+    <div class="skills">
+      <span class="skill">HTML</span>
+      <span class="skill">CSS</span>
+      <span class="skill">JavaScript</span>
+      <span class="skill">Python Fundamentals</span>
+      <span class="skill">C#</span>
+      <span class="skill">Data Entry</span>
+      <span class="skill">Data Verification</span>
+      <span class="skill">Digital Records</span>
+      <span class="skill">AI Tools</span>
+      <span class="skill">Prompt Engineering</span>
+      <span class="skill">Google Workspace</span>
+      <span class="skill">Microsoft Office</span>
+    </div>
   </section>
 
-  <section>
+  <section id="experience">
+    <h2>Experience</h2>
+
+    <div class="experience">
+      <h3>Data Entry Specialist — Springboard / FamilySearch</h3>
+
+      <p class="date">Remote</p>
+
+      <ul>
+        <li>Entered and updated digital historical records.</li>
+        <li>Reviewed information for accuracy and consistency.</li>
+        <li>Worked with digital records and indexing tools.</li>
+        <li>Used spreadsheets, documents, and online collaboration tools.</li>
+        <li>Maintained accuracy while working with large amounts of information.</li>
+      </ul>
+    </div>
+
+    <div class="experience">
+      <h3>Clerk — The Church of Jesus Christ of Latter-day Saints</h3>
+
+      <p class="date">August 2024 – Present</p>
+
+      <ul>
+        <li>Maintain and organize administrative records.</li>
+        <li>Work with confidential information responsibly.</li>
+        <li>Support accurate record keeping and administrative tasks.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="projects">
     <h2>Projects</h2>
 
     <div class="project">
       <h3>Personal Portfolio Website</h3>
+
       <p>
-        A responsive personal portfolio website built with HTML and CSS
-        to showcase my skills, projects, and professional background.
+        A responsive portfolio website created with HTML and CSS
+        to showcase my professional background, skills, experience,
+        and technology projects.
       </p>
     </div>
 
     <div class="project">
-      <h3>Data Verification & Records Project</h3>
+      <h3>Web Programming Projects</h3>
+
       <p>
-        Experience working with digital records, entering information,
-        checking accuracy, and maintaining consistent data.
+        Coursework and personal projects involving web development,
+        programming, APIs, databases, and software development concepts.
+      </p>
+    </div>
+
+    <div class="project">
+      <h3>Data Verification & Digital Records</h3>
+
+      <p>
+        Practical experience entering, reviewing, correcting, and
+        maintaining digital information with attention to accuracy
+        and consistency.
       </p>
     </div>
   </section>
 
-  <section>
+  <section id="contact">
     <h2>Contact</h2>
-    <p>Email: Add your email here</p>
-    <p>GitHub: olamideadedayo</p>
+
+    <p>
+      I am open to remote opportunities in data, AI, technology,
+      web development, and related entry-level roles.
+    </p>
+
+    <div class="buttons">
+      <a
+        class="button"
+        href="https://github.com/olamideadedayo"
+        target="_blank">
+        GitHub
+      </a>
+    </div>
   </section>
 
   <footer>
-    <p>© 2026 Adedayo Joseph Falana</p>
+    <p>© 2026 Adedayo Joseph Falana. All rights reserved.</p>
   </footer>
 
 </body>
